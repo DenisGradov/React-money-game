@@ -1,40 +1,59 @@
-# React project for React course
+<a name="начало"></a>
 
-### `npm start`
+# Сайт-игра-кликер для получения BTC
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Привет, я Денис, и я разработал сайт на Реакте. На данном сайте вы можете зарабатывать BTC-коины. Для этого нужно либо кликать мышкой по кнопке, либо покупая видеокарты майнить бтк автономно. Для поднятия награды за клик - в разделе Shop можно покупать более крутые мышки. Для увеличения автономного майнинга, все в том же разделе покупать видеокарты. С заработком BTC - будет подниматься уровень персонажа. Есть админка для редактирования мышек/видеокарт/уровней
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Ты можешь посмотреть [краткий видео-обзор](https://youtu.be/bkhQ0CH6Rf0), а можешь почитать этот пост
 
-### `npm test`
+### Главы
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Начало](#начало)
+- [Home](#Home)
+- [Shop](#Shop)
+- [Админка](#Админка)
+- [Используемые компоненты](#компоненты)
 
-### `npm run build`
+<a name="Home"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Home ([в начало](#начало))
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### При запуске сайта мы видим главную страницу. На ней отображается информация о нашем персонаже (аватарка, звание, лвл, % до следующего звания, а так же баланс), кнопка для ручной добычи биткоина, а так же статистика по кликам. Вверху сайта имеется навигация, сделанная при помощи React Router. Кликая по кнопке Click - мы добываем определенное число BTC, которое равно значению из пункта "BTC за 1 клик". Для повышения звания нужно фармить бтк. Если баланс превысит лимит звания - персонаж получит следующий уровень. Если же баланс опустится ниже мин.уровня текущего ранга - уровень опустится до прошлого
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![screen](https://github.com/DenisGradov/React-money-game/blob/main/git-img/home.png?raw=true)
 
-### `npm run eject`
+<a name="Shop"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Shop ([в начало](#начало))
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### В данном разделе вы сможете купить мышки и видеокарты. У каждой мышки есть параметры: цена мыши и прибыль, которую мышь приносит за 1 клик. Прибыль со всех купленных мышек стакается => если вы купили 10 мышек по 1 бтк/клик и 1 мышку с 10бтк/клик - за 1 клик вы получите 21 бтк. Видеокарты - аналогичны мышкам, но их доход уже автоматический, то-есть вам не нужно кликать для заработка. Цены в магазине / профиты и другие параметры устроены таким образом, что бы максимально просто протестировать сайт. Для реального использования значения кратно увеличились бы. В данном разделе так же дублируется баланс (сверху сайта), а так же статистика кликов (снизу сайта)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![screen](https://github.com/DenisGradov/React-money-game/blob/main/git-img/shop.png?raw=true)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<a name="Админка"></a>
 
-## Learn More
+## Админка ([в начало](#Админка))
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Т.к. это пэт проект, без бекенда и т.д. - админка сдесь максимально приметивная (например данные для авторизации лежат в utils/data.js). Для входа в админку переходим по пути /admin. Вводим логин пароль (root admin). Дальше возвращаемся в меню. Теперь мы можем редактировать лвла / мышки / видеокарты. Для этого кликаем ЛКМ по фотографиям (лвла / мышки / видеокарты). Открывается меню, где мы можем настроить выбранный элемент / добавить новый. Все интуитивно понятно, в видео это более наглядно описано
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![screen](https://github.com/DenisGradov/React-money-game/blob/main/git-img/admin-login.png?raw=true)
+![screen](https://github.com/DenisGradov/React-money-game/blob/main/git-img/edit-shop.png?raw=true)
+![screen](https://github.com/DenisGradov/React-money-game/blob/main/git-img/edit-lvl.png?raw=true)
+<br/>
+
+<a name="компоненты"></a>
+
+## Используемые компоненты ([в начало](#начало))
+
+| Название компонента | Значение                                      |
+| ------------------- | --------------------------------------------- |
+| App.js              | Связка всех компонентов. Майнинг видеокартами |
+| Admin.jsx           | Рендеринг админ-меню / авторизации в админку  |
+| AdminLogin.jsx      | Страница авторизации в админку                |
+| AdminMenu.jsx       | Админка                                       |
+| Home.jsx            | Главная страница (Home)                       |
+| Navigation.jsx      | Кнопки навигации                              |
+| MainLayout.jsx      | Рендеринг навигации + выбранного компонента   |
+| Mouse.jsx           | Компонент с мышкой                            |
+| Videocard.jsx       | Компонент с видеокартой                       |
+| Shop.jsx            | Страница с магазином (Shop)                   |

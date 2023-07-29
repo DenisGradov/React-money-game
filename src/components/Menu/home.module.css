@@ -1,0 +1,193 @@
+.main {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.main .infoBordPer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .infoBord {
+  width: 200px;
+  border-radius: 15px;
+  margin: 15px;
+  background: wheat;
+  border: 1px solid #000;
+}
+.main .infoBord .img {
+  border-radius: 15px 15px 0px 0px;
+  width: 200px;
+  height: 130px;
+}
+.main .infoBord .lvlBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 20px;
+  border: 1px solid #000;
+  border-right: 0px;
+  border-left: 0px;
+  background-color: rgb(104, 253, 153);
+}
+.main .infoBord .lvlBar .fill {
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(32, 255, 32);
+  border: 0px solid #000;
+  border-right: 1px solid #000;
+  max-width: 100%;
+}
+.main .infoBord .lvlBar .percent {
+  position: absolute;
+  top: 4px;
+  font-weight: bold;
+}
+.main .infoBord .text {
+  margin: 3px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.main .infoBord .text span {
+  font-weight: bold;
+  color: red;
+}
+.main .farmBox {
+  border: 1px solid #000;
+  background-color: wheat;
+  border-radius: 15px;
+}
+.main .farmBox .balance {
+  margin: 15px;
+  color: black;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.main .farmBox .balance span {
+  color: red;
+}
+.main .farmBox .button {
+  margin: 15px;
+  color: black;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid #000;
+  width: 200px;
+}
+.main .statisticBox {
+  padding: 14px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  background-color: rgb(255, 240, 212);
+}
+.main .statisticBox .statistic {
+  font-family: sans-serif;
+}
+.main .statisticBox .statistic span {
+  color: red;
+}
+
+.avatars {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+Something {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mouseBox {
+  margin: 10px;
+  border: 1px solid #000;
+  background-color: wheat;
+  width: 200px;
+}
+.mouseBox .img {
+  width: 200px;
+  height: 130px;
+}
+.mouseBox .title {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mouseBox .text {
+  margin: 3px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.mouseBox .text span {
+  font-weight: bold;
+  color: red;
+}
+
+.button {
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #000;
+  width: 90px;
+  font-weight: bold;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}

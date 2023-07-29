@@ -1,0 +1,103 @@
+.shopBox {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.shopBox .title {
+  margin: 15px;
+  color: black;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.shopBox .title span {
+  color: red;
+}
+.shopBox .tovarZone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shopBox .tovarZone .mouses {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.editSomething {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mouseBox {
+  margin: 10px;
+  border: 1px solid #000;
+  background-color: wheat;
+  width: 200px;
+}
+.mouseBox .img {
+  width: 200px;
+  height: 130px;
+}
+.mouseBox .title {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mouseBox .text {
+  margin: 3px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.mouseBox .text span {
+  font-weight: bold;
+  color: red;
+}
+.mouseBox .button {
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #000;
+  width: 90px;
+  font-weight: bold;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.mouseBox .button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
